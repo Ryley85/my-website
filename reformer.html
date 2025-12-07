@@ -1,0 +1,100 @@
+<!--
+Name: Joelle Armandine
+project Name: Imove Studio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imove Pilates</title>
+     <!-- Link to external CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <a class="navbar-brand" href="#"><img src="img/logo..png" alt="logo"></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a>
+            <ul>
+                <li><a href="reformer.html">Reformer Pilates</a></li>
+                <li><a href="mat.html">Mat Pilates</a></li>
+                <li><a href="private.html">Private Pilates</a></li>
+            </ul>
+        </li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="about-section container text-center my-5">
+    <h1 class="mb-4">Reformer Pilates</h1>
+        <p>
+            Unleash your potential with our Reformer Pilates classes at Embody Pilates. Our expert instructors guide you through dynamic workouts designed to strengthen, tone, and rejuvenate your body. Experience the transformative effects of Reformer Pilates and take your fitness journey to new heights.
+        </p>
+    <h3>What is Reformer Pilates?</h3>
+        <p><strong>Discover the Power of Reformer Pilates</strong></p>
+        <p>Reformer Pilates utilises a specialised piece of equipment called the Reformer, which adds resistance to traditional Pilates exercises. This unique approach enhances core stability, improves posture, and increases flexibility, making it an ideal workout for all fitness levels.</p>
+    <h3>Benefits of Reformer Pilates</h3>
+    <p><strong>Transform your body and mind with our dynamic, full-body Reformer Pilates class.</strong></p>
+    <p><strong>Full-Body Workout:</strong> Target multiple muscle groups simultaneously for a comprehensive fitness routine.</p>
+    <p><strong>Improved Posture:</strong>Strengthen your core and back muscles to support a healthier, more aligned posture.</p>
+    <p><strong>Increased Flexibility:</strong> Stretch and lengthen your muscles, enhancing overall flexibility and range of motion.</p>
+    <p><strong>Enhanced Strength:</strong>Build lean muscle mass and boost overall strength with controlled, resistance-based movements.</p>
+    <p><strong>Injury Prevention:</strong>Strengthen your stabilising muscles and improve balance to reduce the risk of injury.</p>
+</section>
+    <div class="text-center my-4">
+       <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#bookingModal">
+    Book a class
+</button>
+    </div>
+    <div>
+      <img src="img/reformer.JPG" class="d-block w-100" alt="reformer pilates">
+    </div>
+
+
+    <footer class="bg-light text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2025 <br> <br> Imove Studio.  All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book a Class</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="classDate" class="form-label">Select a date</label>
+            <input type="date" id="classDate" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="classType" class="form-label">Choose class type</label>
+            <select id="classType" class="form-select" required>
+              <option value="">-- Select --</option>
+              <option>Beginners</option>
+              <option>Intermediate</option>
+              <option>Mixed Level</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">Confirm Booking</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>

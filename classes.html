@@ -1,0 +1,95 @@
+<!--
+Name: Joelle Armandine
+project Name: Imove Studio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imove Pilates</title>
+     <!-- Link to external CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <a class="navbar-brand" href="#"><img src="img/logo..png" alt="logo"></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a>
+            <ul>
+                <li><a href="reformer.html">Reformer Pilates</a></li>
+                <li><a href="mat.html">Mat Pilates</a></li>
+                <li><a href="private.html">Private Pilates</a></li>
+            </ul>
+        </li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section class="about-section container text-center my-5">
+    <h1>Book a class</h1>
+    <p>Book your Pilates class hassle-free online. Whether you're a newbie or a pro, our simple booking system ensures you secure your spot with ease. Take charge of your fitness journey now!</p>
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#bookingModal">
+    Book a class
+</button>
+    <br>
+    <br>
+    <h2>Choose the Perfect Class for You</h2>
+    <br>
+    <p><strong>Beginners</strong></p>
+    <p>This class is perfect for beginners or those returning to Reformer Pilates after a break. You'll become familiar with the reformer and master the foundational principles of Pilates, focusing on core strength, flexibility, and alignment. We recommend attending at least four classes before progressing.</p>
+    <p><strong>Intermediate</strong></p>
+    <p>This class is designed for those who have completed at least four Mixed Level classes or are regular Reformer Pilates practitioners. You'll be challenged to explore and master more advanced movements, taking your practice to the next level.</p>
+    <p><strong>Mixed Level</strong></p>
+    <p>This class is perfect for those who have completed at least four beginner classes or are already familiar with Reformer Pilates. You’ll build on the basics and begin exploring more complex, integrated movements that challenge your coordination, strength, and flexibility.</p>
+</section>
+   
+<div class="ratio ratio-16x9 container my-4">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hC82jCRzLMw?si=Gli-N_RFQmpMu9rL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<footer class="bg-light text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2025 <br> <br> Imove Studio.  All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book a Class</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="classDate" class="form-label">Select a date</label>
+            <input type="date" id="classDate" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="classType" class="form-label">Choose class type</label>
+            <select id="classType" class="form-select" required>
+              <option value="">-- Select --</option>
+              <option>Beginners</option>
+              <option>Intermediate</option>
+              <option>Mixed Level</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">Confirm Booking</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

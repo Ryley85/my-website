@@ -1,0 +1,110 @@
+<!--
+Name: Joelle Armandine
+project Name: Imove Studio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imove Pilates</title>
+     <!-- Link to external CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <a class="navbar-brand" href="#"><img src="img/logo..png" alt="logo"></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a>
+            <ul>
+                <li><a href="reformer.html">Reformer Pilates</a></li>
+                <li><a href="mat.html">Mat Pilates</a></li>
+                <li><a href="private.html">Private Pilates</a></li>
+            </ul>
+        </li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="about-section container text-center my-5">
+    <h1 class="mb-4">Private Pilates</h1>
+        <p>Elevate your Pilates practice with our Private Pilates sessions at Embody Pilates. Tailored to meet your individual needs and goals, our one-on-one instruction provides the ultimate personalised workout experience, ensuring you achieve optimal results.</p>
+        <h3>What is Private Pilates?</h3>
+        <p><strong>Experience Personalised Fitness with Private Pilates</strong></p>
+        <p>Private Pilates offers customised sessions with a dedicated instructor, focusing solely on your unique fitness journey. Whether you're a beginner or an experienced practitioner, private sessions are designed to address your specific needs, from rehabilitation to advanced technique refinement.</p>
+        <p><strong>Building Strength & Flexibility</strong></p>
+        <h3>Benefits of Private Pilates</h3>
+        <p><strong>Personalised Attention:</strong>Receive individualised guidance and feedback from our expert instructors.</p>
+        <p><strong>Customised Workouts:</strong>Tailor each session to your fitness level, goals, and any specific concerns or limitations.</p>
+        <p><strong>Faster Progress:</strong>Achieve your goals more quickly with targeted, efficient workouts.</p>
+        <p><strong>Flexibility:</strong>Schedule sessions at times that are convenient for you.</p>
+        <p><strong>Enhanced Motivation:</strong>Stay committed and motivated with the support of a dedicated instructor.</p>
+    </section>
+
+    <section class="about-section container text-center my-5">
+        <h1>Class Structure</h1>
+        <p><strong>Our Private Pilates sessions are meticulously crafted to ensure you get the most out of each workout. Each session typically includes:</strong></p>
+        <h3>Assessment & Progress Tracking</h3>
+        <p>Initial evaluation to understand your fitness level, goals, and any specific needs, with regular assessments to monitor and adjust your program.</p>
+        <h3>Warm-Up & Cool Down</h3>
+        <p>Gentle movements to prepare your body for the workout, and stretching techniques to aid in recovery and flexibility.</p>
+        <h3>Customised Exercises</h3>
+        <p>Tailored exercises that target your specific goals, whether it's core strength, flexibility, or rehabilitation</p>
+
+    </section>
+    <div class="text-center my-4">
+       <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#bookingModal">
+    Book a class
+</button>
+    </div>
+    <div>
+      <img src="img/private.jpg" width="100%" height="auto" alt="private pilates">
+    </div>
+
+
+    <footer class="bg-light text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2025 <br> <br> Imove Studio.  All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book a Class</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="classDate" class="form-label">Select a date</label>
+            <input type="date" id="classDate" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="classType" class="form-label">Choose class type</label>
+            <select id="classType" class="form-select" required>
+              <option value="">-- Select --</option>
+              <option>Beginners</option>
+              <option>Intermediate</option>
+              <option>Mixed Level</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">Confirm Booking</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
